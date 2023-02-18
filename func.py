@@ -3,6 +3,7 @@ from sympy.solvers import solve
 from sympy import Symbol
 from sympy import Float
 
+#degree
 def get_info(degree):
 
     DEGREE = degree
@@ -29,6 +30,7 @@ def cos_to_angle(cos):
     angle = round(m.degrees(m.acos(cos)), 3)
     return angle
 
+# triangle
 def area(a, b, c):
     sp = (a+b+c) / 2
     return m.sqrt(sp*(sp-a)*(sp-b)*(sp-c))
@@ -53,6 +55,7 @@ def bisector(a, b, c):
     BD = a - CD
     bstr = m.sqrt(c * b - BD * CD)
     return bstr
+
 
 if __name__ == "__main__":
     DEGREE = int(input("Degree: "))
