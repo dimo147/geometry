@@ -4,6 +4,8 @@ print("options: ")
 print("1) Triangle")
 print("2) Circle")
 print("3) Equation")
+print("4) Exit")
+print()
 
 op = int(input("Enter: "))
 
@@ -15,5 +17,7 @@ elif op == 2:
     exec(open("circle.py").read())
 elif op == 3:
     exec(open("eq_solver.py").read())
+elif op == 4:
+    exit()
 else:
     print("invalid input")
